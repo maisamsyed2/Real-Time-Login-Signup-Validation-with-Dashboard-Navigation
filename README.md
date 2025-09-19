@@ -53,13 +53,11 @@ This project demonstrates a login and signup form with **real-time input validat
 
 - HTML5  
 - CSS3  
-- JavaScript (ES6)  
+- JavaScript (ES6)
+- TypeScript
+- Angular
 
-## Setup Instructions
 
-1. Clone the repository:  
-```bash
-git clone <repository_url>
 
 
 
