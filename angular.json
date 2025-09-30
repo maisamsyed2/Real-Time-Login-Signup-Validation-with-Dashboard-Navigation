@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngtask": {
+    "student-form": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngtask",
+            "outputPath": "dist/student-form",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -69,21 +68,21 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngtask:build:production"
+              "browserTarget": "student-form:build:production"
             },
             "development": {
-              "browserTarget": "ngtask:build:development"
+              "browserTarget": "student-form:build:development"
             }
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 50108
+            "port": 50319
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngtask:build"
+            "browserTarget": "student-form:build"
           }
         },
         "test": {
@@ -98,7 +97,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -107,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "ngtask"
+  "defaultProject": "student-form"
 }
